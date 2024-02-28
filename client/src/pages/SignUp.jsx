@@ -50,6 +50,7 @@ export default function SignUp() {
         <input type='text' placeholder='email' id='email' className='bg-slate-100 p-3 rounded-lg' onChange={handleChange}/>
         <input type='password' placeholder='password' id='password' className='bg-slate-100 p-3 rounded-lg' onChange={handleChange}/>
        <button disabled={loading} className='bg-slate-700 rounded-3xl text-white uppercase hover:opacity-80'>{loading ? 'loading...' : 'Sign Up'}</button>
+       <OAuth />
        </form>
         <div className='flex gap-2 mt-5'>
         <p>Have an account?</p>
